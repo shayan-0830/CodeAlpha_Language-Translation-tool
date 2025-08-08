@@ -1,0 +1,91 @@
+body {
+    background: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+.container {
+    background: #fff;
+    margin: 40px auto;
+    padding: 32px 32px 16px;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0001;
+}
+h1 {
+    text-align: center;
+    color: #393e46;
+}
+.label, label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #bfc2cb;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.language-selectors {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+.language-selectors div {
+    flex: 1;
+}
+
+select {
+    width: 100%;
+    padding: 6px;
+    border-radius: 7px;
+    border: 1px solid #bfc2cb;
+}
+
+#translateBtn {
+    display: block;
+    margin: 0 auto 18px;
+    padding: 10px 32px;
+    background: #393e46;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#translateBtn:hover {
+    background: #22252b;
+}
+
+#outputSection {
+    margin-top: 12px;
+    text-align: center;
+}
+#translatedText {
+    margin-bottom: 12px;
+    background: #e8f0fe;
+}
+
+#copyBtn, #speakBtn {
+    padding: 6px 14px;
+    margin: 2px 2px 14px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    background: #1da1f2;
+    color: #fff;
+    cursor: pointer;
+}
+#copyBtn:hover, #speakBtn:hover {
+    background: #117bc4;
+}
+#errorMsg {
+    color: #c00;
+    margin-top: 12px;
+    text-align: center;
+}

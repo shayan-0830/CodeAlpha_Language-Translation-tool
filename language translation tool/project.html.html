@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation Tool</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+        <label for="inputText">Enter your text:</label>
+        <textarea id="inputText" rows="4" placeholder="Type text here..."></textarea>
+
+        <div class="language-selectors">
+            <div>
+                <label for="sourceLang">From:</label>
+                <select id="sourceLang"></select>
+            </div>
+            <div>
+                <label for="targetLang">To:</label>
+                <select id="targetLang"></select>
+            </div>
+        </div>
+
+        <button id="translateBtn">Translate</button>
+
+        <div id="outputSection">
+            <h2>Translated Text:</h2>
+            <textarea id="translatedText" rows="4" readonly></textarea>
+            <button id="copyBtn" title="Copy text">📋 Copy</button>
+            <button id="speakBtn" title="Play pronounciation">🔊 Speak</button>
+        </div>
+
+        <div id="errorMsg"></div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
